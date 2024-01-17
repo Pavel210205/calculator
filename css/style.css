@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Roboto";
+    font-weight: normal;
+}
+
+.wrapper {
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: #32d0d3;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.cal {
+    max-width: 400px;
+    margin: 15% auto;
+}
+
+.cal__container {}
+
+.cal__output {
+    max-width: 100%;
+    height: 80px;
+    background-color: #141414;
+    border-radius: 10px;
+    color: #3ec808;
+    padding: 2px 7px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    font-size: 28px;
+    transition: 0.3s;
+    overflow-x: hidden;
+}
+
+.cal__main {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.cal__body {
+    display: grid;
+    width: 80%;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.cal__item {
+    aspect-ratio: 1 /1;
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.cal__regrowth {
+    width: 20%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.cal__simbol {
+    width: 100%;
+    aspect-ratio: 1 /1;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.cal__simbol:active {
+    background-color: #e38b11;
+}
+
+.cal__item:active {
+    background-color: #e38b11;
+}
+
+.division {}
+
+.multiplication {}
+
+.subtraction {}
+
+.addition {}
+
+.equally {}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.orange {
+    background-color: #e38b11;
+    transition: 0.3s;
+    font-size: 40px;
+}
+
+.orange:active {
+    background-color: #cf8317;
+}
+
+.lock {
+    pointer-events: none;
+    opacity: 0.8;
+}
